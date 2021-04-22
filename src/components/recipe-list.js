@@ -40,7 +40,7 @@ const renderRecipes = () =>{
 
 
     return (
-      //container
+     
       <section >
         <div className="recipes-container">
 
@@ -51,7 +51,7 @@ const renderRecipes = () =>{
 
       
          <div className="button-div"> 
-{/* <button className="add-new-recipe" onClick={togglePopup}>Add a new Recipe</button> */}
+
 <button value="addRecipe" className="add-new-recipe" onClick={()=>{
   history.push("/create")
 }}>Add a new Recipe</button>
@@ -59,13 +59,7 @@ const renderRecipes = () =>{
 
 
 </div>
-{/* 
-  {isOpen && <Popup
-      content={<>
-       <Recipe/>
-      </>}
-      handleClose={togglePopup}
-    />} */}
+
 
       </section>
     )

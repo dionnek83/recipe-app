@@ -6,8 +6,8 @@ import {useHistory} from 'react-router-dom'
 import { firestore } from '../firebase';
 import UserContext from '../context/UserContext';
 
-const RecipeItem = ({recipeData,id,recipeInfo}) => {
-const [recipe,] = useState(undefined);
+const RecipeItem = ({recipeData,id}) => {
+
 
 
 
@@ -15,7 +15,7 @@ const user = useContext(UserContext);
 
 
   const deleteRecipe = async () =>{
-    await firestore.collection("users").doc(user.uid).collection("recipes").doc(recipe).delete();
+    await firestore.collection("users").doc(user.uid).collection("recipes").doc(id).delete();
       console.log("Recipe Deleted!");
      window.location.reload();
   }

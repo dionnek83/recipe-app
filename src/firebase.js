@@ -29,16 +29,6 @@ export const signInWithGoogle = () => {
 }
 
 
-  //  export default db;
+
   export default fire;
 
-//need to add the error messages & link sign up to login & sign in with google
-// [] fix links style log in and sign
-/*
- * [] add hover effect for buttons update,delete,view
-   [] add error messages during login and sign up 
-   [] password reset 
-   [] sign in with google on sign up page
-
- * 
-*/

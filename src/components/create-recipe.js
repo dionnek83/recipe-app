@@ -67,7 +67,7 @@ history.push("/");
          <input type="text" value={name}  onChange={onChangeName}></input> 
        </div>
          <div className="input-box">
-         {/* <div> */}
+       
          <span className="details">Ingredients</span>
           <textarea value={ingredients}  onChange={onChangeIngredients} placeholder="separate each ingredient by a comma"></textarea>
        </div>
