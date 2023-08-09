@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was created using flutter and firebase and I designed it using Figma.
 
-## Available Scripts
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/86c307da-f787-4b57-9493-3d8fc09f05bd)
 
-In the project directory, you can run:
+## Onboarding screens
+The onboarding screens are only displayed once which happens when the user installs and runs the app for the first time. 
 
-### `npm start`
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/9d0e2250-84ed-4c84-bf3f-6a29ec5c6f23)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once the user selects the get started button they are directed to the login page. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Authentication 
 
-### `npm test`
+Users can login/ sign up with google or their username and password. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/63d0e140-cb02-40af-bc08-bb66d346f123)
 
-### `npm run build`
+## Homepage 
+Displays all the recipes for the currently logged in user and if the user has no recipes the message "You dont have any recipes yet" is displayed. Users can also search for a specific recipe by entering the recipe name. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/954ad50d-d3dc-47c1-8505-ab9d131d3dd1)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Add a recipe
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+There are 3 steps to add a recipe which are the following:
+- Basics which requires information such as the recipe name, meal type, description etc.
+- Ingredients and once an ingredient is entered it is displayed at the bottom of the page. The image for the recipe is also required in this section. 
+- Instructions which takes in the procedures for the recipe and has the same functionality as the ingredients page.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once all the fields are entered the recipe is pushed to Firebase. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/f78cc4bc-d177-4dcc-82e6-8964ca4faa1f)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Favourites 
 
-## Learn More
+Users can also favourite a recipe by clicking on the heart icon. Once a recipe has a colored heart it will be displayed in the Favourites page. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/538545ca-a1ce-43d0-8f00-c7768e45ad33)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Recipe Page
 
-### Code Splitting
+Once a recipe is selected the user will be directed to a page with the recipe's information like the pages below. This page will display the instructions, ingredients, meal type etc. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/a571a209-e7c9-4b13-94ea-9a2c98c61c36)
 
-### Analyzing the Bundle Size
+## Account 
+This page has a logout button which signs out the currently logged in user and the user is directed to the Sign in page. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image](https://github.com/dionnek83/recipe-app/assets/42995303/164d37c7-c2c7-4e6e-a05b-0b785f69c8b4)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
